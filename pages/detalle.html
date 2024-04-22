@@ -1,18 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--esta etiqueta es la que indica que-->
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escuelita de Voley</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
-        <title>Document</title>
+        <script src="https://kit.fontawesome.com/bb670280a6.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <main class="colorRojo">
-            <dir>
-                <div class="colorVerde">
-                    <p>parrafo que no hereda</p>
+        <header class="bgPrim">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <i class="fa-solid fa-volleyball fa-bounce"></i> 
+                        <span>Escuelita de voley</span></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-row gap-2 mb-2 mb-lg-0 w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html/#torneos"><i class="fa-solid fa-rocket"></i>Entrenamientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/iniciosesion.html"><i class="fa-solid fa-right-to-bracket"></i>Ingresar</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/registrarse.html"><i class="fa-solid fa-registered"></i>Registrarse</a>
+                        </li>   
+                    </ul>
+                    </div>
                 </div>
-            </dir>
+            </nav>            
+        </header>
+        <hr>
+        <main>
+            <div class="container2 bgPrim">
+                
+            </div>  
         </main>
+        <hr>
+        <footer class="footer py-3 bgPrim">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark fs-5">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">
+                            <i class="fa-solid fa-volleyball fa-spin-pulse s-4"></i>
+                        </a>                            
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav flex-row gap-3 mb-2 mb-lg-0 w-100 justify-content-center">
+                            <li class="nav-item">
+                            <a class="nav-link" href="">Preguntas frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="">Sobre la escuelita</a>
+                            </li>                            
+                        </ul>
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav flex-row gap-4 me-auto mb-2 mb-lg-0 w-100 justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="facebook.com/escuelitavoley"><i class="fa-brands fa-facebook text-primary""></i></a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link" href="instagram.com/escuelitavoley"><i class="fa-brands fa-instagram text-danger"></i></a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="api.whatsapp.com/send"><i class="fa-brands fa-twitter text-info"></i></a>
+                                </li>                              
+                            </ul>
+                            </div>
+
+                        
+                    </div>
+                        
+                    </nav>            
+                </header>
+            </footer>
+        
     </body>
 </html>
