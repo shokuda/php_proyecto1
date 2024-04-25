@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -25,25 +26,35 @@ body{
         flex-direction: row;
     }
 }
-header,footer{
+header,footer,main{
     font-family: 'Noto';
+}
+footer{
+    margin-top: auto;
+    height:7vh;
+    width: 100%;
 }
 .container{
     margin-top: 5%;
     margin-bottom: 5%;
-    
+    text-align: center;
 }
+
 .galeria{
-        div{
-            justify-content: space-evenly;
+    color: white;
+        div{                      
             img{
                 border-radius: 7px;
                 box-shadow: 10px 20px 20px rgba(0,0,0,0.8);
+                transition: all .3s;
+            }
+            &:hover img{
+                transform:  scale(1.1);
+                filter: initial
             }
         }
         
 }
-
 .imagen{
     position: relative;
     transition: .3s;
@@ -76,17 +87,17 @@ header,footer{
     border-radius: 7px;
 }
 .titulos{
-    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30vh;
     color: var(--main-color);
-    background:linear-gradient(to bottom, #000000a3, #000000a3);
     background-image:url("../assets/img/background.webp");
-    backdrop-filter: blur(8px);
     width: 100%;
     background-size: cover;
     background-position: center;
-    contenedorTitulos {
-    color: black;
-    }
+    /* .tituloSec{
+    } */
 }
 .textoImagen{
     top: 45%;
@@ -105,14 +116,12 @@ header,footer{
     transform: translate(0,-50%);
     transition-delay: .3s;  
 }
-.footer{
-    position: fixed;
-    height:10vh;
-    bottom: 0;
-    width: 100%;
-}
+
 .bgPrim {
     background-color:var(--main-color);
+}
+.bgSec {
+    background-color:var(--secondary-color);
 }
 .buttonReg {
     font-family: "Open Sans", sans-serif;
@@ -120,7 +129,7 @@ header,footer{
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: val(--primary);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
@@ -131,6 +140,7 @@ header,footer{
     touch-action: manipulation;
 }
 .buttonReg:active {
+    
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
@@ -141,10 +151,7 @@ header,footer{
     padding: 0.25em 0.75em;
     }
 }
-.container2 {
-    background-color: #fff;
-    border-radius: 5px;
-}
+
 input[type="text"],
     input[type="email"],
     input[type="password"],
@@ -171,4 +178,28 @@ input[type="text"],
     }
     input[type="submit"]:hover {
         background-color: #45a049;
+    }
+    .myButton {
+        box-shadow: 3px 3px 6px 0px #f0f7fa;
+        background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+        background-color:#33bdef;
+        border-radius:11px;
+        border:3px solid #057fd0;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:'Noto';
+        font-size:12px;
+        font-weight:bold;
+        padding:11px 24px;
+        text-decoration:none;
+        text-shadow:0px -1px 0px #5b6178;
+    }
+    .myButton:hover {
+        background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+        background-color:#019ad2;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
     }

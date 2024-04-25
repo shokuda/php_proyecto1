@@ -10,29 +10,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <header class="bgPrim">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">
-                        <i class="fa-solid fa-volleyball fa-bounce"></i> 
-                        <span>Escuelita de voley</span></a>
+                    <a class="navbar-brand" href="../index.html">
+                        <div>
+                            <i class="fa-solid fa-volleyball fa-bounce"></i> 
+                            <span>Escuela de voley</span>
+                        </div>
+                    </a>
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-row gap-2 mb-2 mb-lg-0 w-100 justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link " href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+                            <a class="nav-link text-light" href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
                             </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html/#torneos"><i class="fa-solid fa-rocket"></i>Entrenamientos</a>
+                            <a class="nav-link text-light" href="../index.html#torneos"><i class="fa-solid fa-rocket"></i>Torneos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/iniciosesion.html"><i class="fa-solid fa-right-to-bracket"></i>Ingresar</a>
+                            <a class="nav-link text-light" href="../pages/iniciosesion.html"><i class="fa-solid fa-right-to-bracket"></i>Ingresar</a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/registrarse.html"><i class="fa-solid fa-registered"></i>Registrarse</a>
+                            <a class="nav-link text-light" href="../pages/registrarse.html"><i class="fa-solid fa-registered"></i>Registrarse</a>
                         </li>   
                     </ul>
                     </div>
@@ -41,14 +44,26 @@
         </header>
         <hr>
         <main>
-            <div class="container2 bgPrim">
+            <div class="container text-dark">
+                <div><h1 class="fs-1 fw-bold border-dark">Nivel Inicial</h1></div>
+                <hr>
+                <div class="galeria row d-flex gap-5">
+                    <div class="col-md-6 col-sm-5 w-50">
+                        <img src="../assets/img/detalle.webp" alt="detalle">
+                    </div>
+                    <div class="col-md-5 col-sm-9">
+                        <p class="fs-4">
+                            El nivel inicial de voleibol se centra en enseñar a los jugadores las habilidades básicas y fundamentos del deporte. Esto incluye cosas como la posición correcta, el pase, la recepción, el saque y la técnica de bloqueo. También se enfoca en aspectos básicos del juego, como la comprensión de las reglas, la comunicación en la cancha y la coordinación en equipo. Los entrenadores suelen trabajar en mejorar la técnica individual de cada jugador, así como en fomentar la comprensión del juego en conjunto. Es importante desarrollar una base sólida en estas habilidades fundamentales antes de avanzar a niveles más competitivos.
+                        </p>
+                    </div>
+                </div>
                 
             </div>  
         </main>
         <hr>
-        <footer class="footer py-3 bgPrim">
+        <footer class="bgPrim">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-dark fs-5">
+                <nav class="navbar navbar-expand-lg navbar-dark fs-5 h-100">
                     <div class="container-fluid">
                         <a class="navbar-brand">
                             <i class="fa-solid fa-volleyball fa-spin-pulse s-4"></i>
@@ -57,37 +72,35 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav flex-row gap-3 mb-2 mb-lg-0 w-100 justify-content-center">
+                        <ul class="navbar-nav flex-row gap-3 mb-2 mb-lg-0 w-100 justify-content-end">
                             <li class="nav-item">
-                            <a class="nav-link" href="">Preguntas frecuentes</a>
+                            <a class="nav-link text-light fs-5" href="../pages/underConstruction.html">Preguntas frecuentes</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="">Sobre la escuelita</a>
+                            <a class="nav-link text-light fs-5" href="../pages/underConstruction.html">Sobre la escuelita</a>
                             </li>                            
                         </ul>
-
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav flex-row gap-4 me-auto mb-2 mb-lg-0 w-100 justify-content-center">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="facebook.com/escuelitavoley"><i class="fa-brands fa-facebook text-primary""></i></a>
+                                    <a class="nav-link" href="../pages/underConstruction.html"><i class="fa-brands fa-facebook text-primary""></i></a>
                                 </li>  
                                 <li class="nav-item">
-                                    <a class="nav-link" href="instagram.com/escuelitavoley"><i class="fa-brands fa-instagram text-danger"></i></a>
+                                    <a class="nav-link" href="../pages/underConstruction.html"><i class="fa-brands fa-instagram text-danger"></i></a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="api.whatsapp.com/send"><i class="fa-brands fa-twitter text-info"></i></a>
+                                    <a class="nav-link" href="../pages/underConstruction.html"><i class="fa-brands fa-twitter text-info"></i></a>
                                 </li>                              
                             </ul>
+                            <a class="navbar-brand" href="#main">
+                                <i class="fa-solid fa-arrow-up-long fa-bounce"></i>
+                            </a> 
                             </div>
-
-                        
                     </div>
-                        
-                    </nav>            
-                </header>
-            </footer>
-        
+                </nav>            
+            </header>
+        </footer>
     </body>
 </html>

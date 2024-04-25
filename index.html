@@ -3,115 +3,96 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Escuelita de Voley</title>
+        <title>Escuela de Voley</title>
         <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/estilos.css">
         <script src="https://kit.fontawesome.com/bb670280a6.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <header class="bgPrim">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
-                        <i class="fa-solid fa-volleyball fa-bounce"></i> 
-                        <span>Escuelita de voley</span></a>
+                        <div>
+                            <i class="fa-solid fa-volleyball fa-bounce"></i> 
+                            <span>Escuela de voley</span>
+                        </div>
+                    </a>
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-row gap-2 mb-2 mb-lg-0 w-100 justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link " href="#Index"><i class="fa-solid fa-house"></i>Inicio</a>
+                            <a class="nav-link text-light" href="#index"><i class="fa-solid fa-house"></i>Inicio</a>
                             </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#torneos"><i class="fa-solid fa-rocket"></i>Torneos</a>
+                            <a class="nav-link text-light" href="#torneos"><i class="fa-solid fa-rocket"></i>Torneos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/iniciosesion.html"><i class="fa-solid fa-right-to-bracket"></i>Ingresar</a>
+                            <a class="nav-link text-light" href="./pages/iniciosesion.html"><i class="fa-solid fa-right-to-bracket"></i>Ingresar</a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/registrarse.html"><i class="fa-solid fa-registered"></i>Registrarse</a>
+                            <a class="nav-link text-light" href="./pages/registrarse.html"><i class="fa-solid fa-registered"></i>Registrarse</a>
                         </li>   
                     </ul>
                     </div>
                 </div>
             </nav>            
         </header>
-        <main id="main" class="text-light">  
-        <section class ="titulos justify-content-center gap-4">
-            <div class="text-center p-5 fw-bold contenedorTitulos">
-                <p class="fs-1">  Escuela de voley </p>
-                <p class="fs-2"> En el voleibol, cada golpe cuenta. Aprovecha cada oportunidad para alcanzar la grandeza. </p>
-                <a class="buttonReg" role="button" href="./pages/registrarse.html">Hacete socio!</a>
-            </div>        
+        <main id="main">  
+        <section class ="titulos">
+            <div class="text-center text-light">
+                <p class="fs-1 fw-bold"> Escuela de voley </>
+                <div class="tituloSec">
+                    <p class="fs-2 "> En el voleibol, cada golpe cuenta. </p>
+                    <p class="fs-2"> Aprovechá cada oportunidad para alcanzar la grandeza. </p>
+                    <div class="animate__animated animate__bounce">
+                        <a class="buttonReg" role="button" href="./pages/registrarse.html">Hacete socio!</a>
+                    </div>
+                </div>
+                </div>        
         </section>
         <hr>
-        <section id="categorias" class="categorias text-light text-center p-3">
-            <h2>Categorias</h2>
+        <section id="categorias" class="text-light text-center mt-5">
+            <h2 class="fw-bold fs-1">Categorías</h2>
             <div class="container">
                 <div id="galeria" class="galeria row">
-                    <div class="col-md-4 col-sm-6">
-                        <div>
-                            <a href="./pages/detalle.html"><img src="./assets/img/cat1.webp" alt="Inicial" loading="lazy"></a>                            
-                            <div>
-                                <h2>Inicial</h2>
-                            </div>
-                        </div>
+                    <div class="col-md-4 col-sm-7 animate__animated animate__backInLeft">
+                        <a href="./pages/detalle.html"><img src="./assets/img/cat1.webp" alt="Inicial" loading="lazy"></a>                            
+                        <h2>Inicial</h2>
                     </div>
-
-                    <div class="col-md-4 col-sm-6">
-                        <div>
-                            <a href="./pages/detalle.html"><img src="./assets/img/cat2.webp" alt="Menores" loading="lazy"></a>
-                            <div>
-                                <h2>Menores</h2>
-                            </div>
-                        </div>
+                    <div class="col-md-4 col-sm-7 animate__animated animate__backInDown">
+                        <a href="./pages/detalle.html"><img src="./assets/img/cat2.webp" alt="Menores" loading="lazy"></a>
+                        <h2>Menores</h2>
                     </div>
-
-                    <div class="col-md-4 col-sm-6">
-                        <div>
-                            <a href="./pages/detalle.html"><img src="./assets/img/cat3.webp" alt="Juveniles" loading="lazy"></a>
-                            
-                            <div>
-                                <h2>Juveniles</h2>
-                            </div>
-                        </div>
+                    <div class="col-md-4 col-sm-7 animate__animated animate__backInRight">
+                        <a href="./pages/detalle.html"><img src="./assets/img/cat3.webp" alt="Juveniles" loading="lazy"></a>
+                        <h2>Juveniles</h2>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div>
-                            <a href="./pages/detalle.html"><img src="./assets/img/cat4.webp" alt="Primera" loading="lazy"></a>
-                            <div>
-                                <h2>Primera</h2>
-                            </div>
-                        </div>
+                    <div class="col-md-4 col-sm-7 animate__animated animate__backInLeft">
+                        <a href="./pages/detalle.html"><img src="./assets/img/cat4.webp" alt="Primera" loading="lazy"></a>
+                        <h2 >Primera</h2>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div>
-                            <a href="./pages/detalle.html"><img src="./assets/img/cat5.webp" alt="Damas" loading="lazy"></a>
-                            <div>
-                                <h2>Damas</h2>
-                            </div>
-                        </div>
+                    <div class="col-md-4 col-sm-7 animate__animated animate__backInUp">
+                        <a href="./pages/detalle.html"><img src="./assets/img/cat5.webp" alt="Damas" loading="lazy"></a>
+                        <h2>Damas</h2>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div>
-                            <a href="./pages/detalle.html"><img src="./assets/img/cat6.webp" alt="Veteranos" loading="lazy"></a>
-                            <div>
-                                <h2>Veteranos</h2>
-                            </div>
-                        </div>
+                    <div class="col-md-4 col-sm-7 animate__animated animate__backInRight">
+                        <a href="./pages/detalle.html"><img src="./assets/img/cat6.webp" alt="Veteranos" loading="lazy"></a>
+                        <h2>Veteranos</h2>
                     </div>
-                    
                 </div>
-                
             </div>
                 
         </section>
         <hr>
         <section id="torneos" class="text-light text-center p-3">
-            <h2>Torneos</h2>
+            <h2 class="fw-bold fs-1 mt-5">Torneos</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
@@ -149,9 +130,9 @@
             </div>    
         </section>
         </main>
-        <footer class="bgPrim py-3">
+        <footer class="mt-auto bgPrim">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-dark fs-5">
+                <nav class="navbar navbar-expand-lg navbar-dark fs-5 h-100">
                     <div class="container-fluid">
                         <a class="navbar-brand">
                             <i class="fa-solid fa-volleyball fa-spin-pulse s-4"></i>
@@ -160,41 +141,35 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav flex-row gap-3 mb-2 mb-lg-0 w-100 justify-content-center">
+                        <ul class="navbar-nav flex-row gap-3 mb-2 mb-lg-0 w-100 justify-content-end">
                             <li class="nav-item">
-                            <a class="nav-link" href="">Preguntas frecuentes</a>
+                            <a class="nav-link text-light fs-5" href="./pages/underConstruction.html">Preguntas frecuentes</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="">Sobre la escuelita</a>
+                            <a class="nav-link text-light fs-5" href="./pages/underConstruction.html">Sobre la escuelita</a>
                             </li>                            
                         </ul>
-
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav flex-row gap-4 me-auto mb-2 mb-lg-0 w-100 justify-content-center">
                                 <li class="nav-item">
-                                    <a class="nav-link" href=""><i class="fa-brands fa-facebook text-primary""></i></a>
+                                    <a class="nav-link" href="./pages/underConstruction.html"><i class="fa-brands fa-facebook text-primary""></i></a>
                                 </li>  
                                 <li class="nav-item">
-                                    <a class="nav-link" href=""><i class="fa-brands fa-instagram text-danger"></i></a>
+                                    <a class="nav-link" href="./pages/underConstruction.html"><i class="fa-brands fa-instagram text-danger"></i></a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href=""><i class="fa-brands fa-twitter text-info"></i></a>
+                                    <a class="nav-link" href="./pages/underConstruction.html"><i class="fa-brands fa-twitter text-info"></i></a>
                                 </li>                              
                             </ul>
                             <a class="navbar-brand" href="#main">
                                 <i class="fa-solid fa-arrow-up-long fa-bounce"></i>
                             </a> 
                             </div>
-
-                        
                     </div>
-                    
                 </nav>            
             </header>
-
-            
         </footer>
         <script src="./js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
