@@ -46,30 +46,65 @@
                 </div>
             </nav>            
         </header>
-        <hr>
-        <main>
+        <main id="main">
             <section class="animate__animated animate__backInUp">
-                <div class="container text-light">
-                    <div><h1 class="fs-1 fw-bold border-dark">Nivel Inicial</h1></div>
-                    <hr>
-                    <div class="galeria row d-flex gap-5">
-                        <div class="col-md-6 col-sm-5 w-50 p-2 m-2">
-                            <img src="../assets/img/detalle.webp" alt="detalle">
+                <div class="container text-start text-light">
+                    <h2 class="mt-4 fs-2 fw-bold">Registro</h2>
+                    <form class="row mt-2 fs-5">
+                        <div>
+                            <div class="form-group">
+                                <label for="nombre">Nombre y Apellido:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                            </div>
                         </div>
-                        <div class="col-md-5 col-sm-9 p-2 m-2">
-                            <p class="fs-4 text-light m-2">
-                                El nivel inicial de voleibol se centra en enseñar a los jugadores las habilidades básicas y fundamentos del deporte. Esto incluye cosas como la posición correcta, el pase, la recepción, el saque y la técnica de bloqueo. También se enfoca en aspectos básicos del juego, como la comprensión de las reglas, la comunicación en la cancha y la coordinación en equipo. Los entrenadores suelen trabajar en mejorar la técnica individual de cada jugador, así como en fomentar la comprensión del juego en conjunto. Es importante desarrollar una base sólida en estas habilidades fundamentales antes de avanzar a niveles más competitivos.
-                            </p>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                                <label for="user">Usuario/a:</label>
+                                <input type="text" class="form-control" id="user" placeholder="Ingrese su usuario/a" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="animate__animated animate__bounce animate__repeat-3 mt-5">
-                        <a class="buttonReg fw-bolder" role="button" href="../pages/registrarse.html">Hacete socio!</a>
-                    </div>    
+                        
+                        <div class="form-group col-md-4 col-sm-6">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                        </div>
+                        <div class="form-group col-md-4 col-sm-6">
+                            <label for="password2">Repetir contraseña:</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Ingrese nuevamente su contraseña" required>
+                        </div>
+                        <div class="form-group  col-md-4 col-sm-6">
+                            <label for="correo">Correo</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo" required>
+                        </div>
+                        <div class="form-group  col-md-4 col-sm-6">
+                            <label for="nacimiento">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" id="nacimiento">
+                        </div>
+                            <div class="form-group  col-md-4 col-sm-6">
+                        <label for="posicion">Posición:</label>
+                        <select class="form-control" id="posicion">
+                            <option value="">Seleccione su posición</option>
+                            <option value="Atacante">Atacante</option>
+                            <option value="Bloqueador">Bloqueador/a</option>
+                            <option value="Libero">Libero</option>
+                            <option value="Armador">Armador/a</option>
+                            <option value="Defensa">Defensa</option>
+                        </select>
+                        </div>
+                        <label for="problema">Problemas físicos</label>
+                        <textarea id="problema" name="prblema" rows="4"></textarea>
+                        <div class="text-center">
+                            <input type="radio" class="btn btn-radio" name="terminos" value="1"> Acepta términos y condiciones
+                        </div>
+                        <div>
+                            <button type="reset" class="myButton bd-highlight mt-3">Reestablecer</button>
+                            <button type="submit" class="myButton bd-highlight mt-3">Enviar</button>
+                        </div>
+                    </form>
                 </div>  
             </section>
             
         </main>
-        <hr>
         <footer  class="bgPrim text-light">
             <div class="text-center text-md-start ">
                     <div class="d-flex row flex-wrap text-center text-md-start w-100 ">
@@ -94,6 +129,5 @@
                     </div>
             </div>
         </footer>
-        <script src="./js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
     </body>
 </html>
