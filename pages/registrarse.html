@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/bb670280a6.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
     <body class="d-flex flex-column min-vh-100">
@@ -43,60 +44,63 @@
             </nav>            
         </header>
         <main id="main">
-            <div class="container text-start text-dark">
-                <h2 class="fs-1">Registro</h2>
-                <form class="row mt-2 fs-5">
-                    <div>
-                        <div class="form-group">
-                            <label for="nombre">Nombre y Apellido:</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+            <section class="animate__animated animate__backInUp">
+                <div class="container text-start text-dark">
+                    <h2 class="mt-4 fs-2 fw-bold">Registro</h2>
+                    <form class="row mt-2 fs-5">
+                        <div>
+                            <div class="form-group">
+                                <label for="nombre">Nombre y Apellido:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="form-group">
-                            <label for="user">Usuario/a:</label>
-                            <input type="text" class="form-control" id="user" placeholder="Ingrese su usuario/a" required>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                                <label for="user">Usuario/a:</label>
+                                <input type="text" class="form-control" id="user" placeholder="Ingrese su usuario/a" required>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-group col-md-4 col-sm-6">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
-                    </div>
-                    <div class="form-group col-md-4 col-sm-6">
-                        <label for="password2">Repetir contraseña:</label>
-                        <input type="password" class="form-control" id="password2" placeholder="Ingrese nuevamente su contraseña" required>
-                    </div>
-                    <div class="form-group  col-md-4 col-sm-6">
-                        <label for="correo">Correo</label>
-                        <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo" required>
-                    </div>
-                    <div class="form-group  col-md-4 col-sm-6">
-                        <label for="nacimiento">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" id="nacimiento">
-                    </div>
+                        
+                        <div class="form-group col-md-4 col-sm-6">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                        </div>
+                        <div class="form-group col-md-4 col-sm-6">
+                            <label for="password2">Repetir contraseña:</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Ingrese nuevamente su contraseña" required>
+                        </div>
                         <div class="form-group  col-md-4 col-sm-6">
-                    <label for="posicion">Posición:</label>
-                    <select class="form-control" id="posicion">
-                        <option value="">Seleccione su posición</option>
-                        <option value="Atacante">Atacante</option>
-                        <option value="Bloqueador">Bloqueador/a</option>
-                        <option value="Libero">Libero</option>
-                        <option value="Armador">Armador/a</option>
-                        <option value="Defensa">Defensa</option>
-                    </select>
-                    </div>
-                    <label for="problema">Problemas físicos</label>
-                    <textarea id="problema" name="prblema" rows="4"></textarea>
-                    <div class="text-center">
-                        <input type="radio" class="btn btn-radio" name="terminos" value="1"> Acepta términos y condiciones
-                    </div>
-                    <div>
-                        <button type="reset" class="myButton bd-highlight mt-3">Reestablecer</button>
-                        <button type="submit" class="myButton bd-highlight mt-3">Enviar</button>
-                    </div>
-                </form>
-            </div>  
+                            <label for="correo">Correo</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo" required>
+                        </div>
+                        <div class="form-group  col-md-4 col-sm-6">
+                            <label for="nacimiento">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" id="nacimiento">
+                        </div>
+                            <div class="form-group  col-md-4 col-sm-6">
+                        <label for="posicion">Posición:</label>
+                        <select class="form-control" id="posicion">
+                            <option value="">Seleccione su posición</option>
+                            <option value="Atacante">Atacante</option>
+                            <option value="Bloqueador">Bloqueador/a</option>
+                            <option value="Libero">Libero</option>
+                            <option value="Armador">Armador/a</option>
+                            <option value="Defensa">Defensa</option>
+                        </select>
+                        </div>
+                        <label for="problema">Problemas físicos</label>
+                        <textarea id="problema" name="prblema" rows="4"></textarea>
+                        <div class="text-center">
+                            <input type="radio" class="btn btn-radio" name="terminos" value="1"> Acepta términos y condiciones
+                        </div>
+                        <div>
+                            <button type="reset" class="myButton bd-highlight mt-3">Reestablecer</button>
+                            <button type="submit" class="myButton bd-highlight mt-3">Enviar</button>
+                        </div>
+                    </form>
+                </div>  
+            </section>
+            
         </main>
         <footer class="mt-auto bgPrim">
             <header>
