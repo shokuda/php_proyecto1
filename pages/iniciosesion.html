@@ -33,6 +33,9 @@
                             <a class="nav-link text-light" href="../index.html#torneos"><i class="fa-solid fa-rocket"></i>Torneos</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-light" href="./comidas.html"><i class="fa-solid fa-bowl-food"></i>Comidas saludables</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-light" href="./detalle.html"><i class="fa-solid fa-star"></i>Categorias</a>
                         </li>
                         <li class="nav-item">
@@ -48,29 +51,32 @@
         </header>
         <hr>
         <main id="main">
-            <section class="text-light animate__animated animate__backInUp">
-                <div class="d-flex justify-content-center p-3 mb-0">
+            <div class="container mt-5 text-light animate__animated animate__backInUp">
+                <div class="row justify-content-center p-3 mb-0">
                     
-                    <form class="mt-2 fs-4 text-center">
-                        <div>
-                            <div>
-                                <h2 class="mt-4 fs-2 fw-bold animate__animated animate__backInDown">Ingresar</h2>
+                    <div class="col-md-6 mt-2 fs-4 text-center">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="mt-4 fs-2 text-dark animate__animated animate__backInDown">Ingresar</h2>
                             </div>
-                            <div >
-                            <label for="user">Usuario:</label>
-                            <input type="text" class="form-control" id="user" placeholder="Ingrese su usuario" required>
-                            </div>
-                            <div >
-                                <label for="password">Contraseña:</label>
-                                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
-                            </div>
-                        </div>
-                            <div >
+                            <div class="card-body">
+                                <form id="loginForm" onsubmit="validarForm()">
+                                    <div class="form-group">
+                                        <label class="text-dark" for="user">Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo">
+                                        <div id="emailError" class="error-message text-danger"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-dark" for="password">Contraseña:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                                        <div id="passwordError" class="error-message text-danger"></div>
+                                    </div>
+                                </form>
                                 <button type="submit" class="myButton bd-highlight">Ingresar</button>
                             </div>
-                        </form>
+                    </div>
                     </div>  
-            </section>
+            </div>
         </main>
         <hr>
         <footer  class="bgPrim text-light">
@@ -97,6 +103,10 @@
                     </div>
             </div>
         </footer>
-    <script src="./js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <script src="./js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <script src="../js/login.js"></script>
+
     </body>
 </html>

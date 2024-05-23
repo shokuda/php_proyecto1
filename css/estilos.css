@@ -31,7 +31,7 @@ body{
 }
 header,footer,main{
     font-family: 'Noto';
-    text-shadow: 2px 1px rgb(36, 36, 36);
+    text-shadow: 1px 1px rgb(36, 36, 36);
 }
 footer{
     height:10vh;
