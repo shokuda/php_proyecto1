@@ -37,7 +37,7 @@ const validarCampos = () => {
     }
 
     if (isValid) {
-        alert("¡Ingresaste correctamente!");
+        alert("¡Datos correctos!");
     }
 };
 
